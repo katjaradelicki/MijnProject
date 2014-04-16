@@ -22,8 +22,9 @@ public class ResultaatServlet extends HttpServlet {
  
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 * Hier wordt het adres getoond
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * 
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Adres adres=new Adres("Heverdreeg","3A",0,3000,"Leuven");

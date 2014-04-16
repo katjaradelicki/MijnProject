@@ -1,17 +1,15 @@
-<%@ page language="java" contentType="text/html"
-    pageEncoding="UTF-8"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8" session="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set value="${pageContext.servletContext.contextPath}" var="contextPath" />
-<!DOCTYPE html >
-<html>
+<c:set var="contextPath" value="${pageContext.servletContext.contextPath}" />
+<!doctype html> 
+<html lang="nl">
 <head>
-
-<title>Welkom</title>
+  <title>JPA website</title>
+  <link rel="stylesheet" href="${contextPath}/styles/default.css" />
 </head>
 <body>
-<c:set value="oeioei" var="aiai" />
--${aiai}-
-<c:url value="/resultaat.htm" var="resultaatUrl"/>
-<a href="${resultaatUrl}">resultaat</a>
+  <header>
+    <h1>JPA website</h1>
+  </header>
 </body>
-</html>
+</html> 
